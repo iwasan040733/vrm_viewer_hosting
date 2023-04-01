@@ -36,9 +36,17 @@
         width: 16ch;
       }
       #inputDefaultVRM {
-        float: right;
         width: 16ch;
-        padding-right: 2ch;
+      }
+      .button {
+        float: right;
+        margin-right: 2ch;
+      }
+      #resetPose {
+        display: none;
+      }
+      #uiHideButton {
+        display: none;
       }
     </style>
     <script src="main.js"></script>
@@ -51,13 +59,20 @@
 
   <body>
     <div id="ui">
-      <input type="file" accept=".vrm" id="inputVRM" />
+      <input type="file" accept=".vrm" class="button" id="inputVRM" />
       <input
         type="button"
-        value="デフォルト"
-        accept=".vrm"
+        class="button"
+        value="サンプル読込"
         id="inputDefaultVRM"
       />
+      <input
+        type="button"
+        class="button"
+        value="ポーズリセット"
+        id="resetPose"
+      />
+      <input type="button" class="button" value="UI非表示" id="uiHideButton" />
     </div>
     <div id="viewer"></div>
   </body>
