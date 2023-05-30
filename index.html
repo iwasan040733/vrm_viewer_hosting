@@ -48,10 +48,13 @@
       #savePose {
         display: none;
       }
-      #uiHideButton {
+      #uiHide {
         display: none;
       }
       #lineEffector {
+        display: none;
+      }
+      #printScreenShot {
         display: none;
       }
     </style>
@@ -75,7 +78,13 @@
       <input type="button" class="button" value="ポーズreset" id="resetPose" />
       <input type="button" class="button" value="ポーズ保存" id="savePose" />
       <input type="button" class="button" value="線画抽出" id="lineEffector" />
-      <input type="button" class="button" value="UI非表示" id="uiHideButton" />
+      <input type="button" class="button" value="UI非表示" id="uiHide" />
+      <input
+        type="button"
+        class="button"
+        value="写真を撮る"
+        id="printScreenShot"
+      />
     </div>
     <div id="viewer" style="width: 100%"></div>
   </body>
