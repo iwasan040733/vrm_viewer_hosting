@@ -114,6 +114,9 @@
       #toast-container.toast-top-center {
         top: 100px;
       }
+      #inputDefaultVRM2 {
+        display: none;
+      }
       @media only screen and (min-width: 1025px) {
         .dropdown {
           width: 150px;
@@ -262,8 +265,9 @@
             <span><i class="far fa-folder"></i></span>
             <i class="non-italic">読み込み</i>
             <ul class="dropdown-menu">
-              <li id="triggerInputVRM">ファイルを開く</li>
-              <li id="inputDefaultVRM1">サンプル1</li>
+              <li id="triggerInputVRM">VRMファイル</li>
+              <li id="triggerInputPose">ポーズファイル</li>
+              <li id="inputDefaultVRM1">サンプル</li>
               <li id="inputDefaultVRM2">サンプル2</li>
             </ul>
           </div>
@@ -301,5 +305,6 @@
     </div>
     <div id="viewer" style="width: 100%"></div>
     <input type="file" id="inputVRM" accept=".vrm" style="display: none" />
+    <input type="file" id="inputPose" accept=".json" style="display: none" />
   </body>
 </html>
