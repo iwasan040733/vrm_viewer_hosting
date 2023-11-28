@@ -139,7 +139,7 @@
       #inputDefaultVRM2 {
         display: none;
       }
-      @media only screen and (min-width: 1025px) {
+      @media only screen and (min-width: 1280px) {
         .dropdown {
           width: 150px;
           margin-right: 20px;
@@ -152,7 +152,7 @@
           font-size: 13px;
         }
       }
-      @media only screen and (max-width: 1024px) {
+      @media only screen and (max-width: 1279px) {
         .dropdown {
           width: 100px;
           margin-right: 20px;
@@ -163,6 +163,12 @@
         }
         .dropdown .dropdown-menu li {
           font-size: 10px;
+        }
+        .dropdown {
+          -webkit-tap-highlight-color: transparent;
+        }
+        .dropdown .dropdown-menu {
+          -webkit-tap-highlight-color: transparent;
         }
       }
       .dropdown {
